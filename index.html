@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="google-site-verification" content="Kiadh-2hMqoqUtQRWjwAqwio02fCUEgCcafDzEuMnJY" />
+  <title>Bhuviash Cakes — Madurai</title>
+  <link rel="stylesheet" href="styles.css">
+ 
+
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Bhuviash Cakes</h1>
+      <nav class="nav">
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <h2>Freshly baked cakes & pastries — delivered in Madurai</h2>
+        <p>Custom birthday cakes, wedding cakes, eggless options, and celebration boxes. Order online or WhatsApp us directly.</p>
+        <div class="cta-row">
+          <a class="btn" href="#order">Order Now</a>
+          <a class="btn ghost" href="https://wa.me/916382610994?text=Hi%20SweetSlice!%20I%20want%20to%20order%20a%20cake." target="_blank" rel="noopener">WhatsApp Us</a>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+
+  <section id="menu" class="container section">
+    <h3>Popular Cakes</h3>
+    <div class="cards">
+      <article class="card">
+        
+        <h4>Chocolate Truffle</h4>
+        <p>Rich dark chocolate cake with ganache. From ₹799 (1 kg)</p>
+        <button class="btn order-btn" data-item="Chocolate Truffle">Order</button>
+      </article>
+      <article class="card">
+        
+        <h4>Black Forest</h4>
+        <p>Classic black forest with cherries. From ₹899 (1 kg)</p>
+        <button class="btn order-btn" data-item="Black Forest">Order</button>
+      </article>
+      <article class="card">
+        
+        <h4>Eggless Vanilla</h4>
+        <p>Soft vanilla sponge (eggless). From ₹699 (1 kg)</p>
+        <button class="btn order-btn" data-item="Eggless Vanilla">Order</button>
+      </article>
+    </div>
+  </section>
+
+  <section id="order" class="container section order-section">
+    <h3>Place an Order</h3>
+    <p>Fill the form or click WhatsApp to send details.</p>
+    <form id="orderForm" class="order-form" onsubmit="handleOrder(event)">
+      <label>
+        Your Name
+        <input type="text" name="name" id="name" required>
+      </label>
+      <label>
+        Phone (WhatsApp)
+        <input type="tel" name="phone" id="phone" placeholder="+91xxxxxxxxxx" required>
+      </label>
+      <label>
+        Cake / Item
+        <input type="text" name="item" id="item" required>
+      </label>
+      <label>
+        Delivery Date
+        <input type="date" name="date" id="date" required>
+      </label>
+      <label>
+        Message (optional)
+        <textarea name="message" id="message" rows="3"></textarea>
+      </label>
+      <div class="form-row">
+        <button class="btn" type="submit">Send Order via WhatsApp</button>
+        <button class="btn ghost" type="button" onclick="copyOrderLink()">Copy Order Link</button>
+      </div>
+    </form>
+    <p class="note">This form prepares a WhatsApp message with your order — no server needed.</p>
+  </section>
+
+  <section id="about" class="container section">
+    <h3>About SweetSlice</h3>
+    <p>SweetSlice is a family-run bakery in Madurai, baking fresh cakes daily using high-quality ingredients. We specialize in custom celebration cakes and fast local delivery.</p>
+  </section>
+
+  <section id="contact" class="container section">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:bhuvaneshwaran4023@gmail.com">Bhuvaneshwaran4023@gmail.com</a></p>
+    <p>Phone / WhatsApp: <a href="https://wa.me/916382610994">+91 6382610994</a></p>
+    <p>Address: 12, Bakery Street, Madurai</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> SweetSlice Cakes — Made with ❤️ in Tiruppur</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+ 
+</body>
+</html>
