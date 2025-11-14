@@ -10,7 +10,7 @@ function handleOrder(e){
   const message = document.getElementById('message').value.trim();
   if(!name || !phone || !item || !date){ alert('Please fill required fields'); return; }
   const text = encodeURIComponent(
-    `Hello SweetSlice!%0AName: ${name}%0APhone: ${phone}%0AItem: ${item}%0ADelivery Date: ${date}%0AMessage: ${message}`
+    `Hello Bhuviash Cakes!%0AName: ${name}%0APhone: ${phone}%0AItem: ${item}%0ADelivery Date: ${date}%0AMessage: ${message}`
   );
   const wa = `https://wa.me/916382610994?text=${text}`;
   window.open(wa, '_blank');
